@@ -1,0 +1,114 @@
+<
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+      <style>
+        body{
+       background:url("https://i.pinimg.com/736x/36/3e/18/363e181f5c00ad93f68261660310c60d.jpg");
+       background-repeat:no-repeat;
+       background-size: cover;
+   }
+   header{
+       height:20%;
+       text-align: center;
+       font-size: 45px;
+     text-transform:uppercase;
+     letter-spacing:10px;
+      text-shadow:2px 2px 4px black;
+   }
+   #yourId,#otherId,#yourMessage,#messages{
+     border-color: slategrey;
+     margin-bottom: 10px;
+   
+   }
+   
+   #messages{
+     font-size:x-large;
+     width:fit-content;
+     padding-bottom: 2%;
+     background-color:dimgray
+   }
+   #send,#connect{
+     background-color:grey;
+     padding:3%;
+     margin: auto;
+     font-size: medium;
+     color:white;
+   }
+   h1{
+      text-align: center;
+      text-shadow:2px 2px 4px #000000;
+      font-size:25px;
+      text-transform:uppercase;
+   }
+   
+   label{
+     resize: none;
+   width: 100%;
+   height: 33.33%;
+   font-size: 18px;
+   padding: 9px;
+   font-weight: bold;
+   text-align: center;
+   text-transform: uppercase;
+   margin:20%;
+   }
+   
+        
+   #box{
+       align-items: center;
+       float:left; 
+       width:22%; 
+       margin-left: 3%; 
+       padding-left:3%; 
+       padding-right: 5%;
+       border: 5px solid black;
+       margin-top: 2%; 
+   
+       background-image: url("https://hookagency.com/wp-content/uploads/2015/11/hazemaster-gray-gradient-ui-background.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   
+   #box1{
+   
+       float:right;
+       width:52%;
+       margin-right: 9%;
+       margin-top: 2%;
+   }
+   video{
+       width:80%;
+       height:100%;
+       padding-left:8%;
+       
+   }
+   </style>
+    </head>
+
+    <body>
+    <div class="container">
+      
+      <header><u>Video Chat</u></header>
+      <section id="box">
+      <h1><u>Chat Box</u></h1>
+      <label>Sender's URL:</label><br/>
+      <textarea id="yourId" rows="4" cols="45"></textarea><br/>
+      <label>Receiver's URL:</label><br/>
+      <textarea id="otherId" rows="4" cols="45"></textarea><br/>
+      <button id="connect">connect</button><br/>
+      <div id= "box2">
+        
+      <label >Chat Here!!</label><br/>
+      <textarea id="yourMessage" rows="4" cols="45"></textarea><br>
+      <button id="send">send</button>
+      <pre id="messages"></pre>
+    </div>
+    </section>
+    <aside id="box1"></aside>
+    </div>
+      <script src="bundle.js" charset="utf-8"></script>
+    </body>
+  </html>
